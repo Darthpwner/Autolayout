@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Autolayout" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="q5X-AF-alZ">
+                                <rect key="frame" x="462" y="41" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Username" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nd1-Y5-FjJ">
+                                <rect key="frame" x="17" y="41" width="79" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Password" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j3C-w6-xHY">
+                                <rect key="frame" x="18" y="94" width="76" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6uk-R0-kLB">
+                                <rect key="frame" x="462" y="94" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="6uk-R0-kLB" firstAttribute="baseline" secondItem="j3C-w6-xHY" secondAttribute="baseline" id="2w3-nV-M2j"/>
+                            <constraint firstItem="6uk-R0-kLB" firstAttribute="top" secondItem="q5X-AF-alZ" secondAttribute="bottom" constant="8" symbolic="YES" id="Bsp-eH-2zX"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="6uk-R0-kLB" secondAttribute="trailing" id="Fug-9m-XQn"/>
+                            <constraint firstItem="q5X-AF-alZ" firstAttribute="leading" secondItem="Nd1-Y5-FjJ" secondAttribute="trailing" constant="8" symbolic="YES" id="Kx8-uD-zcz"/>
+                            <constraint firstItem="j3C-w6-xHY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="2" id="THT-hQ-iFo"/>
+                            <constraint firstItem="q5X-AF-alZ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="atD-Bb-IDN"/>
+                            <constraint firstItem="q5X-AF-alZ" firstAttribute="baseline" secondItem="Nd1-Y5-FjJ" secondAttribute="baseline" id="fAm-kC-bb5"/>
+                            <constraint firstItem="Nd1-Y5-FjJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="1" id="qHn-Nb-g0U"/>
+                            <constraint firstItem="6uk-R0-kLB" firstAttribute="leading" secondItem="j3C-w6-xHY" secondAttribute="trailing" constant="8" symbolic="YES" id="rWs-Sd-uak"/>
+                            <constraint firstItem="j3C-w6-xHY" firstAttribute="width" secondItem="Nd1-Y5-FjJ" secondAttribute="width" id="t4b-pI-gsb"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="q5X-AF-alZ" secondAttribute="trailing" id="zYI-M2-B1a"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="qHn-Nb-g0U"/>
+                                <exclude reference="THT-hQ-iFo"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
